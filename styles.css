@@ -1,0 +1,79 @@
+:root {
+  --pc : #000000;
+  --pF : #ffee0019;
+  --pFF : #0000000a;
+  --sc : #ffffff;
+}
+
+html {
+  background-color: var(--sc);
+  font-family: "Poppins", sans-serif;
+  color: var(--pc);
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+#board {
+  width: 350px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+  padding: 17px;
+  border-radius: 25px;
+  background-color: var(--sc);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--pF);  
+  background-color: var(--pFF);
+  border-radius: 15px;
+  font-size: 70px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell:hover {
+  background-color: var(--pF);
+}
+
+#restartButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  width: 150px;
+  background-color: var(--sc);
+  border: 1px solid var(--pc);
+  color: var(--pc);
+  border-radius: 40px;
+  font-size: 20px;
+}
+
+#restartButton:hover {
+  color: var(--sc);
+  background-color: var(--pc);
+}
+
+#msg {
+  margin: 40px;
+  text-align: center;
+  color: var(--pc);
+}
+
+/* * { border:1px solid green; box-sizing: border-box; } */
