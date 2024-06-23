@@ -11,7 +11,7 @@ for (let cell of cells) {
 
 function handleCellClick(event) {
   const curCell = event.target;
-  
+
   let prevWinX = checkWin(players[0]);
   let prevWinO = checkWin(players[1]);
 
@@ -36,8 +36,6 @@ function handleCellClick(event) {
 }
 
 
-
-
 function checkWin(current) {
   const winConditions = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
@@ -57,12 +55,19 @@ function checkWin(current) {
         msg.style.color = "blue";
         cells[i].style.backgroundColor = cells[j].style.backgroundColor = cells[k].style.backgroundColor = "#d0d0f7";
       }
+      
+      confetti({
+        particleCount: 1000,
+        spread: 360
+      });
+          
       return true;
     }
   }
 
   return false;
 }
+
 
 function checkTie() {
   for (let cell of cells) 
@@ -86,3 +91,4 @@ function restart() {
 
   return;
 }
+

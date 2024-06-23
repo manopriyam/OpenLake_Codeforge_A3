@@ -1,4 +1,6 @@
 ### Live Website Link : https://manopriyam.github.io/OpenLake_Codeforge_A3/
+### References :
+- https://github.com/catdad/canvas-confetti
 
 # Task Details :
 

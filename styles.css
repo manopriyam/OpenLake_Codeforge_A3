@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  height: 600px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -54,8 +54,6 @@ h1 {
 
 #restartButton {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   height: 40px;
   width: 150px;
   background-color: var(--sc);
@@ -71,7 +69,6 @@ h1 {
 }
 
 #msg {
-  margin: 40px;
   text-align: center;
   color: var(--pc);
 }
